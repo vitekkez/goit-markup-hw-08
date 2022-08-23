@@ -1,0 +1,24 @@
+.hero-button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-hover-color);
+  }
+}

@@ -1,0 +1,69 @@
+.team {
+  background-color: var(--accent-button-color);
+}
+.team-list {
+  display: flex;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondery-text-color);
+}
+
+.team-list__item {
+  flex-basis: calc(100% / 4 - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__item + .item {
+  margin-left: 30px;
+}
+
+.team-content__par {
+  margin-bottom: 16px;
+}
+
+/* socisl network buttons */
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.team-content {
+  padding: 30px 0px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-white-color);
+}

@@ -1,0 +1,14 @@
+.logo {
+  display: inherit;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo__black {
+  color: var(--logo-color);
+}
+.logo__white {
+  color: var(--primary-white-color);
+}
