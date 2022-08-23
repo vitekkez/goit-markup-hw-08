@@ -14,4 +14,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%; /*для адаптації*/
+  height: auto; /*для адаптації*/
+  width: 100%; /*для адаптації*/
 }

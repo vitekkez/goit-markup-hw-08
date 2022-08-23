@@ -1,7 +1,7 @@
 .hero-button {
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   min-width: 200px;
 
   color: var(--primary-white-color);
@@ -13,6 +13,11 @@
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+    min-width: 216px;
+  }
 
   transition-property: background-color;
   transition-duration: 250ms;

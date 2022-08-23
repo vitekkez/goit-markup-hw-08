@@ -1,6 +1,6 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px; /*для адаптації*/
+  height: 400px; /*для адаптації*/
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -10,21 +10,36 @@
   background-position: center;
   background-size: cover;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px; /*для адаптації*/
+  padding-bottom: 118px; /*для адаптації*/
 
   background-color: var(--primary-background-color);
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px; /*для адаптації*/
+    height: 400px; /*для адаптації*/
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px; /*для адаптації*/
+    height: 600px; /*для адаптації*/
+  }
+
   .container {
     text-align: center;
   }
 }
 
 .hero-title {
+  font-size: 26px;
+  line-height: 1.62;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.39;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px; /*для адаптації*/
+    line-height: 1.39; /*для адаптації*/
+  }
 }

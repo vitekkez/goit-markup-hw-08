@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #757575;
   --secondery-text-color: #212121;
@@ -26,6 +27,9 @@ p {
 
 img {
   display: block;
+  max-width: 100%; /*для адаптації*/
+  height: auto; /*для адаптації*/
+  width: 100%; /*для адаптації*/
 }
 
 body {
@@ -62,9 +66,24 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%; /*для адаптації*/
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -168,35 +187,53 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px; /*для адаптації*/
+  height: 400px; /*для адаптації*/
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px; /*для адаптації*/
+  padding-bottom: 118px; /*для адаптації*/
   background-color: var(--primary-background-color);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px; /*для адаптації*/
+    height: 400px; /*для адаптації*/
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px; /*для адаптації*/
+    height: 600px; /*для адаптації*/
+  }
 }
 .hero .container {
   text-align: center;
 }
 
 .hero-title {
+  font-size: 26px;
+  line-height: 1.62;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.39;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px; /*для адаптації*/
+    line-height: 1.39; /*для адаптації*/
+  }
 }
 
 .hero-button {
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   min-width: 200px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -208,6 +245,12 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .hero-button {
+    padding: 10px 32px;
+    min-width: 216px;
+  }
 }
 .hero-button:hover, .hero-button:focus {
   background-color: var(--accent-hover-color);
