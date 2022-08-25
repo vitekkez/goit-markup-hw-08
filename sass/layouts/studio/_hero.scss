@@ -30,13 +30,17 @@
 }
 
 .hero-title {
-  font-size: 26px;
+  font-size: 21px;
   line-height: 1.62;
   font-weight: 900;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  @include mobile {
+    font-size: 26px;
+  }
 
   @include desktop {
     font-size: 44px; /*для адаптації*/
