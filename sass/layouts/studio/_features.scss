@@ -1,12 +1,15 @@
 .feature-list {
-  display: flex;
+  // display: flex;
   font-size: 14px;
   line-height: 1.7;
 }
 
 .feature-list__item {
-  min-width: 270px;
-  flex-basis: calc(100% / 4 - 30px);
+  max-width: 480px;
+  margin-bottom: 30px;
+
+  // min-width: 270px;
+  // flex-basis: calc(100% / 4 - 30px);
   &::before {
     display: block;
     content: '';
@@ -36,7 +39,7 @@
 }
 
 .feature-list__item + .feature-list__item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 
 .feature-list__title {
