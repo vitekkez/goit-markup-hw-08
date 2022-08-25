@@ -15,11 +15,11 @@
 
   background-color: var(--primary-background-color);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     max-width: 768px; /*для адаптації*/
     height: 400px; /*для адаптації*/
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 1600px; /*для адаптації*/
     height: 600px; /*для адаптації*/
   }
@@ -38,7 +38,7 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 44px; /*для адаптації*/
     line-height: 1.39; /*для адаптації*/
   }
