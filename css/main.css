@@ -29,7 +29,6 @@ img {
   display: block;
   max-width: 100%; /*для адаптації*/
   height: auto; /*для адаптації*/
-  width: 100%; /*для адаптації*/
 }
 
 body {
@@ -274,8 +273,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -290,10 +295,27 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .feature-list__item {
-  max-width: 480px;
+  width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .feature-list__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    width: 270px;
+  }
 }
 .feature-list__item::before {
   display: block;
@@ -319,12 +341,14 @@ body {
   background-image: url(../images/astronaut4.svg);
 }
 
-.feature-list__title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.14;
+.feature-list__title.title {
   text-transform: uppercase;
   color: var(--secondery-text-color);
+}
+@media screen and (min-width: 768px) {
+  .feature-list__title.title {
+    text-align: left;
+  }
 }
 
 .section.work {
