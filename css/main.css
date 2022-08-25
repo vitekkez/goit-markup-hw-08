@@ -66,7 +66,6 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%; /*для адаптації*/
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -191,24 +190,41 @@ body {
   height: 400px; /*для адаптації*/
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imghero.jpg);
+  padding-top: 118px; /*для адаптації*/
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero-mobile-x1.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 118px; /*для адаптації*/
-  padding-bottom: 118px; /*для адаптації*/
   background-color: var(--primary-background-color);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero-mobile-x2.jpeg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero-tables-x1.jpeg);
     max-width: 768px; /*для адаптації*/
     height: 400px; /*для адаптації*/
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero-tables-x2.jpeg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imghero.jpg);
     max-width: 1600px; /*для адаптації*/
     height: 600px; /*для адаптації*/
+    padding-top: 200px; /*для адаптації*/
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero-desktop-x2.jpeg);
   }
 }
 .hero .container {
@@ -217,7 +233,7 @@ body {
 
 .hero-title {
   font-size: 21px;
-  line-height: 1.62;
+  line-height: 1.6;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -226,6 +242,7 @@ body {
 @media screen and (min-width: 480px) {
   .hero-title {
     font-size: 26px;
+    line-height: 1.62;
   }
 }
 @media screen and (min-width: 1200px) {
