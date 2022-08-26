@@ -397,6 +397,7 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   line-height: 1.19;
   text-align: center;
