@@ -6,19 +6,35 @@
   align-items: center;
 }
 
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #afb1b8;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-property: border, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    width: 226px;
+  }
+  @include desktop {
+    width: 170px;
+  }
   > .link-icon {
     fill: currentColor;
   }
