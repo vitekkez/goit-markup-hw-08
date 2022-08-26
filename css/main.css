@@ -630,13 +630,8 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-.gallery .item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .gallery-thum {
