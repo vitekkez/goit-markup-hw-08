@@ -726,7 +726,7 @@ body {
 }
 
 .modal {
-  width: 320px;
+  width: 100%;
   min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -780,11 +780,17 @@ body {
 .speaker-form-par {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .speaker-form-par {
+    line-height: 1.5;
+  }
 }
 
 .spacer-box-input {
@@ -855,8 +861,13 @@ body {
 .form-check {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .form-check {
+    font-size: 14px;
+  }
 }
 
 .speaker-form .hero-button {
