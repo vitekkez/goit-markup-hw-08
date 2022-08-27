@@ -539,14 +539,12 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .aside-contact {
-    margin-bottom: 60px;
-  }
+.aside-contact {
+  margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .aside-contact {
-    margin-left: 76px;
+    margin-left: 72px;
   }
 }
 
