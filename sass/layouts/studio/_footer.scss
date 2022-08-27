@@ -5,8 +5,17 @@
   color: var(--primary-white-color);
   .container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    text-align: center;
+
+    // align-items: baseline;
   }
+}
+
+.aside-contact {
+  margin-bottom: 60px;
 }
 
 .aside__link {
@@ -43,7 +52,8 @@
 }
 
 .aside-soc {
-  margin-left: 70px;
+  // margin-left: 70px;
+  margin-bottom: 60px;
 }
 .aside-par {
   margin-bottom: 20px;
@@ -55,12 +65,15 @@
 }
 
 .aside-subscription {
-  margin-left: auto;
+  // margin-left: auto;
+
   .hero-button {
     display: flex;
     align-items: center;
     margin-left: 10px;
     border: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-button::after {
     justify-content: center;
@@ -75,11 +88,14 @@
 }
 .aside-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .aside-form-mail {
-  width: 358px;
+  // width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
