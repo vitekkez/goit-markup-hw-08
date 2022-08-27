@@ -64,7 +64,7 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">галерея работ</h1>
-          <!-- <ul class="menu list">
+          <ul class="menu list">
             <li class="menu__item item">
               <button type="button" class="menu__button">Все</button>
             </li>
@@ -80,13 +80,30 @@
             <li class="menu__item item">
               <button type="button" class="menu__button">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
 
           <ul class="gallery list">
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img1p.jpg" alt="ноутбук" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img1p.jpg 1x, ./images/jpeg/gl1-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl1-tab-x1.jpeg 1x, ./images/jpeg/gl1-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl1-mob-x1.jpeg 1x, ./images/jpeg/gl1-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img1p.jpg" alt="ноутбук" />
+                  </picture>
+
+                  <!-- <img src="./images/img1p.jpg" alt="ноутбук" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -102,7 +119,23 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img2p.jpg" alt="баскетбол" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img2p.jpеg 1x, ./images/jpeg/gl2-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl2-tab-x1.jpeg 1x, ./images/jpeg/gl2-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl2-mob-x1.jpeg 1x, ./images/jpeg/gl2-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img2p.jpg" alt="баскетбол" />
+                  </picture>
+                  <!-- <img src="./images/img2p.jpg" alt="баскетбол" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -118,12 +151,29 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/img3p.jpg 1x, ./images/jpeg/gl3-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl3-tab-x1.jpeg 1x, ./images/jpeg/gl3-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl3-mob-x1.jpeg 1x, ./images/jpeg/gl3-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img3p.jpg" alt="постер ресторан Seafood" />
+                  </picture>
+
+                  <!-- <img
                     src="./images/img3p.jpg"
                     alt="постер ресторан Seafood"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -139,7 +189,24 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img4p.jpg" alt="наушники" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img4p.jpg 1x, ./images/jpeg/gl4-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl4-tab-x1.jpeg 1x, ./images/jpeg/gl4-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl4-mob-x1.jpeg 1x, ./images/jpeg/gl4-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img4p.jpg" alt="наушники" />
+                  </picture>
+
+                  <!-- <img src="./images/img4p.jpg" alt="наушники" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -155,7 +222,24 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img5p.jpg" alt="коробки" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img5p.jpg 1x, ./images/jpeg/gl5-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl5-tab-x1.jpeg 1x, ./images/jpeg/gl5-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl5-mob-x1.jpeg 1x, ./images/jpeg/gl5-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img5p.jpg" alt="коробки" />
+                  </picture>
+
+                  <!-- <img src="./images/img5p.jpg" alt="коробки" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -171,7 +255,23 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img6p.jpg" alt="монитор" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img6p.jpg 1x, ./images/jpeg/gl6-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl6-tab-x1.jpeg 1x, ./images/jpeg/gl6-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl6-mob-x1.jpeg 1x, ./images/jpeg/gl6-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img6p.jpg" alt="монитор" />
+                  </picture>
+                  <!-- <img src="./images/img6p.jpg" alt="монитор" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -187,7 +287,24 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img7p.jpg" alt="книга" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img7p.jpg 1x, ./images/jpeg/gl7-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl7-tab-x1.jpeg 1x, ./images/jpeg/gl7-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl7-mob-x1.jpeg 1x, ./images/jpeg/gl7-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img7p.jpg" alt="книга" />
+                  </picture>
+
+                  <!-- <img src="./images/img7p.jpg" alt="книга" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -203,7 +320,23 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img8p.jpg" alt="бирка" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img8p.jpg 1x, ./images/jpeg/gl8-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl8-tab-x1.jpeg 1x, ./images/jpeg/gl8-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl8-mob-x1.jpeg 1x, ./images/jpeg/gl8-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img8p.jpg" alt="бирка" />
+                  </picture>
+                  <!-- <img src="./images/img8p.jpg" alt="бирка" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -221,7 +354,24 @@
             <li class="gallery__item item">
               <a href="" class="gallery__link link">
                 <div class="gallery-thum">
-                  <img src="./images/img9p.jpg" alt="работа на ноутбуке" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/img9p.jpg 1x, ./images/jpeg/gl9-des-x2.jpeg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/jpeg/gl9-tab-x1.jpeg 1x, ./images/jpeg/gl9-tab-x2.jpeg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/jpeg/gl9-mob-x1.jpeg 1x, ./images/jpeg/gl9-mob-x2.jpeg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img9p.jpg" alt="работа на ноутбуке" />
+                  </picture>
+
+                  <!-- <img src="./images/img9p.jpg" alt="работа на ноутбуке" width="370" height="294" /> -->
                   <p class="gallery-thum__par">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
