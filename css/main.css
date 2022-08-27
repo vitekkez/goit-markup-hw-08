@@ -89,9 +89,15 @@ body {
   display: inherit;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.74;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__black {
@@ -513,13 +519,35 @@ body {
 }
 .aside .container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .aside .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aside .container {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aside .container {
+    align-items: baseline;
+  }
 }
 
-.aside-contact {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .aside-contact {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aside-contact {
+    margin-left: 76px;
+  }
 }
 
 .aside__link {
@@ -555,8 +583,21 @@ body {
   margin-bottom: 9px;
 }
 
-.aside-soc {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .aside-soc {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aside-soc {
+    margin-right: 89px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aside-soc {
+    margin-left: 70px;
+  }
 }
 
 .aside-par {
@@ -568,13 +609,28 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .aside-subscription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aside-subscription {
+    margin-left: auto;
+  }
+}
 .aside-subscription .hero-button {
   display: flex;
   align-items: center;
   margin-left: 10px;
   border: 0px;
-  margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (max-width: 1199px) {
+  .aside-subscription .hero-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .aside-subscription .hero-button::after {
   justify-content: center;
@@ -588,19 +644,32 @@ body {
 
 .aside-form {
   display: flex;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .aside-form {
+    flex-wrap: wrap;
+  }
 }
 
 .aside-form-mail {
   width: 100%;
   height: 50px;
-  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .aside-form-mail {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .aside-form-mail {
+    margin-bottom: 20px;
+  }
 }
 
 .menu {
