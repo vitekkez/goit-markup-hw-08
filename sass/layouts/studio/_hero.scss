@@ -1,9 +1,9 @@
 .hero {
-  max-width: 480px; /*для адаптації*/
-  height: 400px; /*для адаптації*/
+  max-width: 767px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px; /*для адаптації*/
+  padding-top: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/jpeg/hero-mobile-x1.jpeg);
 
@@ -25,15 +25,16 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/jpeg/hero-tables-x2.jpeg);
     }
-    max-width: 768px; /*для адаптації*/
-    height: 400px; /*для адаптації*/
+    max-width: 1199px;
+
+    height: 400px;
   }
   @include desktop {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/imghero.jpg);
-    max-width: 1600px; /*для адаптації*/
-    height: 600px; /*для адаптації*/
-    padding-top: 200px; /*для адаптації*/
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
 
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
