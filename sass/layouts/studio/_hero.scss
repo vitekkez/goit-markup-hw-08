@@ -1,5 +1,5 @@
 .hero {
-  width: 100%;
+  max-width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -41,9 +41,6 @@
 
   .container {
     text-align: center;
-    // @include mobile {
-    //   max-width: 100%;
-    // }
   }
 }
 
