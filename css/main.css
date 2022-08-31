@@ -497,6 +497,14 @@ body {
 }
 
 .feature-list__title.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.feature-list__title.title {
   text-transform: uppercase;
   color: var(--secondery-text-color);
 }
