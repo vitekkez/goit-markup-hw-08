@@ -412,11 +412,6 @@ body {
 .hero .container {
   text-align: center;
 }
-@media screen and (min-width: 480px) {
-  .hero .container {
-    max-width: 100%;
-  }
-}
 
 .hero-title {
   font-size: 21px;
