@@ -370,7 +370,7 @@ body {
 }
 
 .hero {
-  max-width: 767px;
+  max-width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -389,8 +389,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero-tables-x1.jpeg);
-    max-width: 1199px;
-    height: 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -413,6 +411,11 @@ body {
 }
 .hero .container {
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .hero .container {
+    max-width: 100%;
+  }
 }
 
 .hero-title {
