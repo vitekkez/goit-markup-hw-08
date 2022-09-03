@@ -26,6 +26,9 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 72px;
   }
+  @include desktop {
+    margin-bottom: 0px;
+  }
 }
 
 .aside__link {
